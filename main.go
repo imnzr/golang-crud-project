@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/imnzr/golang-crud-project/config"
+	"github.com/imnzr/golang-crud-project/db"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	cfg := config.LoadConfig()
+	db.ConnectMySQL(cfg)
 }
