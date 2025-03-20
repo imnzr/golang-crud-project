@@ -23,10 +23,11 @@ func LoadConfig() *Config {
 	}
 
 	return &Config{
-		DBUser: os.Getenv("DB_USER"),
-		DBPass: os.Getenv("DB_PASS"),
-		DBHost: os.Getenv("DB_HOST"),
-		DBname: os.Getenv("DB_NAME"),
-		DBPort: os.Getenv("DB_PORT"),
+		DBUser:     os.Getenv("DB_USER"),
+		DBPass:     os.Getenv("DB_PASS"),
+		DBHost:     os.Getenv("DB_HOST"),
+		DBname:     os.Getenv("DB_NAME"),
+		DBPort:     os.Getenv("DB_PORT"),
+		ServerPort: os.Getenv("SERVER_PORT"),
 	}
 }
